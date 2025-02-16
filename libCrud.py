@@ -9,6 +9,7 @@ class CRUD:
     
     def read(scriptSQL):
         CRUD.curl.execute(scriptSQL)
+        return CRUD.curl.fetchone()
     
     def update(scripSQL):
         CRUD.curl.execute(scripSQL)
